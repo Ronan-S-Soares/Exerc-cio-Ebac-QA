@@ -31,12 +31,12 @@
             Exemplo:
             | tamanho | Cor       | Quantidade |
             | "G"     | "Azul"    | "3"        |
-            | M       | "Azul"    | "5"        |
-            | GG      | "Verde"   | "10"       |
-            | P       | "Rosa"    | "3"        |
-            | G       | "Amarelo" | "8"        |
-            | XG      | "Prata"   | "2"        |
-            | PP      | "Preto"   | "7"        |
-            | EG      | "Branco"  | "4"        |
+            | "M"     | "Azul"    | "5"        |
+            | "GG"    | "Verde"   | "10"       |
+            | "P"     | "Rosa"    | "3"        |
+            | "G"     | "Amarelo" | "8"        |
+            | "XG"    | "Prata"   | "2"        |
+            | "PP"    | "Preto"   | "7"        |
+            | "EG"    | "Branco"  | "4"        |
 
 

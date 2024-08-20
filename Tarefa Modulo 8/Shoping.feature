@@ -12,31 +12,26 @@
             Cenario: Configuração válida de produto
             Quando eu selecionar o <tamanho> e <cor> e <quantidade>
             Entao o produto deve ser adicionado ao carrinho com as configurações selecionadas
-            E eu devo ver a mensagem "Produto adicionado ao carrinho com sucesso"
+            E eu devo ver a <mensagem>
 
             Cenario: Configuração inválida de produto
-            Quando eu selecionar o <tamanho> e <> e <quantidade>
-            Entao eu devo ver uma mensagem de erro indicando que a cor é obrigatória
+            Quando eu selecionar o <tamanho> e <cor> e <quantidade>
+            Entao eu devo ver uma <mensagem>
             E o produto não deve ser adicionado ao carrinho
 
             Cenario: Limite de quantidade por venda
             Quando eu o <tamanho> e <cor> e <quantidade>
-            E eu definir a quantidade "12"  # Quantidade excedendo o limite permitido
-            Entao eu devo ver uma mensagem de erro indicando que o limite é de 10 produtos por venda
+            Entao eu devo ver uma <mensagem> de erro indicando que o limite é de 10 produtos por venda
 
             Cenario: Limpar configurações do produto
             Quando eu o <tamanho> e <cor> e <quantidade> e eu clicar em "Limpar"
             Entao todas as configurações devem voltar ao estado original
 
             Exemplo:
-            | tamanho | Cor       | Quantidade |
-            | "G"     | "Azul"    | "3"        |
-            | "M"     | "Azul"    | "5"        |
-            | "GG"    | "Verde"   | "10"       |
-            | "P"     | "Rosa"    | "3"        |
-            | "G"     | "Amarelo" | "8"        |
-            | "XG"    | "Prata"   | "2"        |
-            | "PP"    | "Preto"   | "7"        |
-            | "EG"    | "Branco"  | "4"        |
+            | tamanho | Cor       | Quantidade | Mensagem|
+            | "G"     | "Azul"    | "3"        |"Produto adicionado ao carrinho com sucesso"|
+            | "M"     | ""    | "5"        | "obrigatorio escolher uma cor "|
+            | "GG"    | "Verde"   | "12"       |" limite é de 10 produtos por venda"|
+           
 
 
